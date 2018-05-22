@@ -1,0 +1,18 @@
+<!-- caroussel-->
+<div class="carousel carousel-slider center" materialize="carousel"  [materializeActions]="carousselActions"  [materializeParams]="[{fullWidth: true , duration:10 }]">
+  <div class="carousel-fixed-item center">
+    <!-- caroussel-slider commandes -->
+    <a class="waves-effect waves-light btn modal-trigger" (click)="prev()">&laquo;</a>
+    <a class="waves-effect waves-light btn modal-trigger" (click)="next()">&raquo;</a>
+  </div>
+  <div class="carousel-item  white-text" href="#one!">
+    <img src="{{imageSrc}}">
+  </div>
+  <div class="carousel-item  white-text" href="#two!">
+    <img src="{{imageSrc2}}">
+  </div>
+  <div class="carousel-item  white-text" href="#three!">
+    <img src="{{imageSrc3}}">
+  </div>
+</div>
+
